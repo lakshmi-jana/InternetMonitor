@@ -1,0 +1,28 @@
+{
+  "retention_days": 90,
+  "run_speed_test_on_startup": true,
+  "speed": {
+    "interval_minutes": 60,
+    "download_url": "https://speed.cloudflare.com/__down",
+    "upload_url": "https://speed.cloudflare.com/__up",
+    "download_bytes_per_stream": 5000000,
+    "download_streams": 4,
+    "upload_bytes": 5000000,
+    "timeout_seconds": 30
+  },
+  "connectivity": {
+    "interval_seconds": 30,
+    "dns_host": "api.anthropic.com",
+    "probe_url": "https://api.anthropic.com/",
+    "attempts": 3,
+    "timeout_seconds": 5,
+    "ping_host": "api.anthropic.com",
+    "ping_count": 10,
+    "ping_timeout_ms": 1000
+  },
+  "dashboard": {
+    "port": 8765,
+    "lan_enabled": false,
+    "access_token": ""
+  }
+}
